@@ -3,8 +3,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; /* Темний фон */
-  color: #f0e68c; /* Світлий текст */
+  background-color: #000; /* Чорний фон */
+  color: #f0e68c; /* Світлий текст (золотистий) */
   animation: fadeIn 1s ease-out; /* Плавне появлення сторінки */
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #ffd700; /* Акцентний колір для заголовків */
+  color: #ffd700; /* Золотий колір для заголовків */
   animation: slideInFromLeft 0.8s ease-out;
 }
 
@@ -47,7 +47,7 @@ h2, h3 {
 
 /* Стилі для хедера */
 header {
-  background-color: #333; /* Темний фон для хедера */
+  background-color: #222; /* Темно-сірий фон для хедера */
   height: 140px; /* Збільшена висота для логотипу */
   padding: 0 20px; /* Додаємо відступи для контенту */
   display: flex;
@@ -86,7 +86,7 @@ header nav {
 }
 
 header nav a {
-  color: #eee8aa; /* Білий текст для посилань */
+  color: #eee8aa; /* Золотистий текст для посилань */
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
@@ -95,7 +95,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #00aaff; /* Блакитний колір при наведенні */
+  color: #ffd700; /* Золотий колір при наведенні */
   animation: bounce 0.3s ease; /* Анімація при наведенні */
 }
 
@@ -130,13 +130,13 @@ main {
 
 .contact-section h1 {
   font-size: 2.5rem;
-  color: #ffd700;
+  color: #ffd700; /* Золотий колір для заголовків */
   margin-bottom: 20px;
 }
 
 .contact-section p {
   font-size: 1.2rem;
-  color: #f0e68c;
+  color: #f0e68c; /* Золотистий текст */
   margin-bottom: 40px;
 }
 
@@ -144,7 +144,7 @@ main {
   list-style: none;
   padding: 0;
   font-size: 1.2rem;
-  color: #f0e68c;
+  color: #f0e68c; /* Золотистий текст */
 }
 
 .contact-info li {
@@ -154,7 +154,7 @@ main {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #333;
+  background-color: #222; /* Темно-сірий фон для форми */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -167,7 +167,7 @@ main {
 
 .contact-form label {
   font-size: 1.1rem;
-  color: #ffd700;
+  color: #ffd700; /* Золотий колір для міток */
 }
 
 .contact-form input,
@@ -177,19 +177,19 @@ main {
   margin-top: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #444;
-  color: #f0e68c;
+  background-color: #333; /* Темно-сірий фон для полів вводу */
+  color: #f0e68c; /* Золотистий текст у полях */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #00aaff;
+  border-color: #ffd700; /* Золотий колір для полів вводу при фокусуванні */
 }
 
 .contact-form button {
-  background-color: #00aaff;
-  color: #fff;
+  background-color: #ffd700; /* Золотий фон для кнопки */
+  color: #000; /* Чорний текст на кнопці */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -199,12 +199,12 @@ main {
 }
 
 .contact-form button:hover {
-  background-color: #0077cc;
+  background-color: #f0e68c; /* Світло-золотий колір при наведенні */
 }
 
 /* Футер */
 footer {
-  background-color: #333;
+  background-color: #222; /* Темно-сірий фон для футера */
   color: #fff;
   text-align: center;
   padding: 20px;
