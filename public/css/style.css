@@ -3,12 +3,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;  /* Темний фон, що підходить під футуристичний стиль */
-  color: #f0e68c; /* Білий текст на темному фоні */
-  animation: fadeIn 1s ease-out; /* Анімація для плавного появлення сторінки */
+  background-color: #1a1a1a; /* Темний фон */
+  color: #f0e68c; /* Світлий текст */
+  animation: fadeIn 1s ease-out; /* Плавне появлення сторінки */
 }
 
-/* Анімація для плавного появлення елементів */
+/* Анімація для плавного появлення */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -19,8 +19,8 @@ body {
 }
 
 h1, h2, h3 {
-  color: #ffd700; /* Блакитний акцент на заголовках */
-  animation: slideInFromLeft 0.8s ease-out; /* Анімація для заголовків */
+  color: #ffd700; /* Акцентний колір для заголовків */
+  animation: slideInFromLeft 0.8s ease-out;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h2, h3 {
   animation-delay: 0.4s;
 }
 
-/* Плавне появлення заголовків */
+/* Анімація для заголовків */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
@@ -45,15 +45,20 @@ h2, h3 {
   }
 }
 
-/* Стилі для навігаційного меню */
+/* Стилі для хедера */
 header {
+  background-image: url('/images/logo/logo.png');
+  background-size: 120px; /* Збільшуємо розмір логотипу */
+  background-repeat: no-repeat;
+  background-position: center 20px; /* Зміщуємо логотип трохи вниз */
+  height: 140px; /* Збільшуємо висоту хедера */
+  padding-top: 20px; /* Відступ зверху для логотипу */
   background-color: #333; /* Темний фон для хедера */
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Тінь для глибини */
-  animation: slideInFromTop 1s ease-out; /* Анімація для хедера */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  animation: slideInFromTop 1s ease-out;
 }
 
+/* Анімація для хедера */
 @keyframes slideInFromTop {
   from {
     transform: translateY(-100%);
@@ -65,21 +70,26 @@ header {
   }
 }
 
+header nav {
+  margin-top: 80px; /* Відступ для меню */
+  text-align: center;
+}
+
 header nav a {
-  color: #eee8aa;  /* Білий текст для посилань */
+  color: #eee8aa; /* Білий текст для посилань */
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  transition: color 0.3s ease; /* Плавна зміна кольору при наведенні */
+  transition: color 0.3s ease; /* Плавна зміна кольору */
 }
 
 header nav a:hover {
-  color: #00aaff; /* Акцентний блакитний колір при наведенні */
-  animation: bounce 0.3s ease; /* Анімація для навігаційних посилань */
+  color: #00aaff; /* Блакитний колір при наведенні */
+  animation: bounce 0.3s ease; /* Анімація при наведенні */
 }
 
-/* Анімація для навігаційних посилань */
+/* Анімація для посилань */
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -96,7 +106,7 @@ header nav a:hover {
 main {
   padding: 40px;
   text-align: center;
-  animation: fadeIn 1.5s ease-out; /* Плавне появлення основного контенту */
+  animation: fadeIn 1.5s ease-out;
 }
 
 footer {
@@ -108,9 +118,10 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 14px;
-  animation: slideInFromBottom 1s ease-out; /* Анімація для футера */
+  animation: slideInFromBottom 1s ease-out;
 }
 
+/* Анімація для футера */
 @keyframes slideInFromBottom {
   from {
     transform: translateY(100%);
@@ -126,7 +137,7 @@ footer p {
   margin: 0;
 }
 
-/* Стилі для головного блоку на першій сторінці */
+/* Сторінка "Про нас" */
 .hero {
   display: flex;
   flex-direction: column;
@@ -138,11 +149,12 @@ footer p {
 }
 
 .hero img {
-  width: 150px; /* Логотип буде чітко видно */
+  width: 150px;
   margin-bottom: 20px;
-  animation: rotateIn 1s ease-out; /* Анімація для логотипу */
+  animation: rotateIn 1s ease-out;
 }
 
+/* Анімація для логотипу */
 @keyframes rotateIn {
   from {
     transform: rotate(-360deg);
@@ -167,7 +179,7 @@ footer p {
   animation: fadeIn 2s ease-out;
 }
 
-/* Стилі для галереї */
+/* Галерея */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -181,8 +193,8 @@ footer p {
   width: 30%;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Легкий тіньовий ефект для карток */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавні ефекти при взаємодії */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -198,8 +210,8 @@ footer p {
 }
 
 .gallery-item:hover {
-  transform: scale(1.3); /* Збільшення картинки при наведенні */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Посилення тіні */
+  transform: scale(1.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .gallery-item img {
@@ -209,7 +221,7 @@ footer p {
   border-radius: 10px;
 }
 
-/* Сторінка контактів та послуг */
+/* Контакти та послуги */
 ul {
   list-style: none;
   padding: 0;
@@ -223,12 +235,6 @@ ul li {
 
 ul li::before {
   content: "• ";
-  color: #00aaff; /* Використовуємо акцентний колір для маркерів */
+  color: #00aaff;
   font-size: 1.5rem;
-}header {
-  background-image: url('/images/logo/logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px; /* або інша висота, щоб логотип мав місце для відображення */
 }
