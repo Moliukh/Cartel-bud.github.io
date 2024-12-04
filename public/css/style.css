@@ -47,13 +47,12 @@ h2, h3 {
 
 /* Стилі для хедера */
 header {
-  background-image: url('/images/logo/logo.png');
-  background-size: 120px; /* Збільшуємо розмір логотипу */
-  background-repeat: no-repeat;
-  background-position: center 20px; /* Зміщуємо логотип трохи вниз */
-  height: 140px; /* Збільшуємо висоту хедера */
-  padding-top: 20px; /* Відступ зверху для логотипу */
   background-color: #333; /* Темний фон для хедера */
+  height: 140px; /* Збільшена висота для логотипу */
+  padding: 0 20px; /* Додаємо відступи для контенту */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Вирівнюємо елементи в хедері */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   animation: slideInFromTop 1s ease-out;
 }
@@ -70,9 +69,20 @@ header {
   }
 }
 
+/* Логотип */
+header .logo {
+  background-image: url('/images/logo/logo.png');
+  background-size: 200px; /* Збільшуємо логотип удвічі */
+  background-repeat: no-repeat;
+  background-position: left center; /* Зміщуємо логотип вліво */
+  height: 120px;
+  width: 200px; /* Ширина для відображення логотипу */
+}
+
+/* Навігація */
 header nav {
-  margin-top: 80px; /* Відступ для меню */
   text-align: center;
+  flex-grow: 1; /* Додаємо простір між логотипом і меню */
 }
 
 header nav a {
